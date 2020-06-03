@@ -38,6 +38,12 @@ function addTodo(){
 
 buttonElement.onclick = addTodo;
 
+inputElement.addEventListener('keydown', (press)=>{
+	if(press.keyCode == 13){
+		addTodo();
+	}
+})
+
 function deleteTodo(position){
 	todos.splice(position, 1);
 	renderTodos();

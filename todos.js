@@ -40,6 +40,7 @@ buttonElement.onclick = addTodo;
 
 inputElement.addEventListener('keydown', (press)=>{
 	if(press.keyCode == 13){
+		//keyCode -> https://keycode.info
 		addTodo();
 	}
 })
